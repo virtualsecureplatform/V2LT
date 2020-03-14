@@ -1,0 +1,162 @@
+{
+  "creator": "Yosys 0.9 (git sha1 1979e0b, clang 11.0.0-++20200313063813+a26bd4ec165-1~exp1~20200313174405.1559 -fPIC -Os)",
+  "modules": {
+    "Adder4bit": {
+      "attributes": {
+        "top": 1,
+        "src": "Adder4bit.v:14"
+      },
+      "ports": {
+        "clock": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "reset": {
+          "direction": "input",
+          "bits": [ 3 ]
+        },
+        "io_in_a": {
+          "direction": "input",
+          "bits": [ 4, 5, 6, 7 ]
+        },
+        "io_in_b": {
+          "direction": "input",
+          "bits": [ 8, 9, 10, 11 ]
+        },
+        "io_out": {
+          "direction": "output",
+          "bits": [ 12, 13, 14, 15, 16 ]
+        }
+      },
+      "cells": {
+        "$abc$122$auto$blifparse.cc:492:parse_blif$123": {
+          "hide_name": 1,
+          "type": "$lut",
+          "parameters": {
+            "LUT": "1111111111110000111111001100000011111110111000001111100010000000111111101110000011111000100000001111110011000000111100000000000011111110111000001111100010000000111111001100000011110000000000001111111011100000111110001000000011111100110000001111000000000000",
+            "WIDTH": 8
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 5, 6, 7, 11, 10, 9, 4, 8 ],
+            "Y": [ 16 ]
+          }
+        },
+        "$abc$122$auto$blifparse.cc:492:parse_blif$124": {
+          "hide_name": 1,
+          "type": "$lut",
+          "parameters": {
+            "LUT": 34680,
+            "WIDTH": 4
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 4, 8, 5, 9 ],
+            "Y": [ 13 ]
+          }
+        },
+        "$abc$122$auto$blifparse.cc:492:parse_blif$125": {
+          "hide_name": 1,
+          "type": "$lut",
+          "parameters": {
+            "LUT": "1111100010000000000001110111111100000111011111111111100010000000",
+            "WIDTH": 6
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 4, 8, 5, 9, 6, 10 ],
+            "Y": [ 14 ]
+          }
+        },
+        "$abc$122$auto$blifparse.cc:492:parse_blif$126": {
+          "hide_name": 1,
+          "type": "$lut",
+          "parameters": {
+            "LUT": "1111111111111000111110000000000011111111100000001000000000000000000000000000011100000111111111110000000001111111011111111111111100000000000001110000011111111111000000000111111101111111111111111111111111111000111110000000000011111111100000001000000000000000",
+            "WIDTH": 8
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 4, 8, 5, 6, 10, 9, 7, 11 ],
+            "Y": [ 15 ]
+          }
+        },
+        "$abc$122$auto$blifparse.cc:492:parse_blif$127": {
+          "hide_name": 1,
+          "type": "$lut",
+          "parameters": {
+            "LUT": 6,
+            "WIDTH": 2
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 4, 8 ],
+            "Y": [ 12 ]
+          }
+        }
+      },
+      "netnames": {
+        "clock": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "src": "Adder4bit.v:15"
+          }
+        },
+        "io_in_a": {
+          "hide_name": 0,
+          "bits": [ 4, 5, 6, 7 ],
+          "attributes": {
+            "src": "Adder4bit.v:17"
+          }
+        },
+        "io_in_b": {
+          "hide_name": 0,
+          "bits": [ 8, 9, 10, 11 ],
+          "attributes": {
+            "src": "Adder4bit.v:18"
+          }
+        },
+        "io_out": {
+          "hide_name": 0,
+          "bits": [ 12, 13, 14, 15, 16 ],
+          "attributes": {
+            "src": "Adder4bit.v:19"
+          }
+        },
+        "reset": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "src": "Adder4bit.v:16"
+          }
+        }
+      }
+    }
+  }
+}

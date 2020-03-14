@@ -1,0 +1,32 @@
+# read design 
+read_verilog Adder4bit.v
+
+# elaborate design hierarchy
+hierarchy -check -top Adder4bit
+
+#delete constants
+opt_expr; opt_clean;
+
+#detect error
+check
+
+#map adder
+wreduce; alumacc;
+
+# the high-level stuff
+share; proc; opt; fsm; opt; memory; opt
+
+# mapping to internal cell library
+techmap; opt; opt_lut
+
+# mapping logic to gates.
+abc -luts 1,2,3,4,5,6,7,8,9,10,11,13,14
+
+# cleanup
+clean -purge
+
+# write synthesized design
+write_json circuit.json
+
+#check output circuit
+show -prefix circuit -format svg
